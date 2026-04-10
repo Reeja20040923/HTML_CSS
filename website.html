@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My sample webiste</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Flexbox Layout */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background: #f95c6c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Navbar */
+        nav {
+            background: #cec933;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: rgb(54, 5, 231);
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #4a90e2;
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        main {
+            flex: 1; /* pushes footer down */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #e36ea98d;
+            padding: 20px;
+        }
+
+        /* Card */
+        .card {
+            background: rgb(101, 239, 239);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* Button */
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            background: #4898f3;
+            color: rgb(240, 38, 6);
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #357abd;
+        }
+
+        /* Footer */
+        footer {
+            background: #f73d55;
+            color: rgb(248, 244, 1);
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Y Reeja</h1>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="card">
+            <h2>Welcome</h2>
+            <p>This is a clean centered content card with shadow.</p>
+            <button>Click Me</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Y Reeja</p>
+    </footer>
+
+</body>
+</html>
