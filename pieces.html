@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Section</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+        }
+
+        /* Section */
+        .pricing {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .pricing h2 {
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+
+        /* Container */
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        /* Card */
+        .card {
+            background: white;
+            padding: 25px;
+            width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        /* Hover Effect */
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Highlight Pro */
+        .pro {
+            border: 2px solid #007BFF;
+            background: #eef5ff;
+            transform: scale(1.08);
+        }
+
+        /* Price */
+        .price {
+            font-size: 22px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        /* Features */
+        .card ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .card ul li {
+            margin: 10px 0;
+        }
+
+        /* Button */
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #007BFF;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .pricing-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<section class="pricing">
+    <h2>Our Pricing Plans</h2>
+
+    <div class="pricing-container">
+
+        <!-- Basic -->
+        <div class="card">
+            <h3>Basic</h3>
+            <p class="price">₹499 / month</p>
+            <ul>
+                <li>✔ 5 Projects</li>
+                <li>✔ Basic Support</li>
+                <li>✔ Limited Storage</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+
+        <!-- Pro -->
+        <div class="card pro">
+            <h3>Pro</h3>
+            <p class="price">₹999 / month</p>
+            <ul>
+                <li>✔ 20 Projects</li>
+                <li>✔ Priority Support</li>
+                <li>✔ 50GB Storage</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+
+        <!-- Premium -->
+        <div class="card">
+            <h3>Premium</h3>
+            <p class="price">₹1999 / month</p>
+            <ul>
+                <li>✔ Unlimited Projects</li>
+                <li>✔ 24/7 Support</li>
+                <li>✔ Unlimited Storage</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
