@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Student Database CRUD</title>
+<link rel="stylesheet" href="std.css" />
+</head>
+<body>
+<h1>Student Database</h1>
+
+<!-- Form to add/update students -->
+<form id="studentForm">
+  <input type="hidden" id="studentId" />
+  <input type="text" id="name" placeholder="Name" required />
+  <input type="number" id="Roll Number" placeholder="Roll Number" required />
+  <input type="text" id="branch" placeholder="Branch" required />
+  <input type="number" id="password" placeholder="password" required/>
+  <input type="radio" id="genderMale" name="gender" value="Male" required />
+  <label for="genderMale">Male</label>
+  <input type="radio" id="genderFemale" name="gender" value   ="Female" required />
+  <label for    ="genderFemale">Female</label>
+  <button type="submit">Add/Update Student</button>
+</form>
+
+
+<script src="std.js"></script>
+</body>
+</html>
